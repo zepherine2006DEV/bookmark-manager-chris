@@ -25,7 +25,11 @@ Database setup:
 
 ```
 $> psql
-admin=# CREATE DATABASE bookmark-manager;
-admin=# CREATE TABLE bookmarks(id SERIAL PRIMARY KEY, url, VARCHAR(60));
+admin=# CREATE DATABASE "bookmark-manager";
+admin=# \c bookmark-manager;
+admin=# CREATE TABLE bookmarks(id SERIAL PRIMARY KEY, url VARCHAR(60));
 admin=# INSERT INTO bookmarks (url) VALUES ('http://www.makersacademy.com'), ('http://www.google.com'), ('http://destroyallsoftware.com');
 ```
+
+Install TablePlus
+From: https://tableplus.io/

@@ -1,6 +1,6 @@
 require 'pg'
 
-class Bookmark 
+class Bookmark
   def self.all
     output_array = []
     connection = PG.connect(dbname: 'bookmark-manager')

@@ -1,3 +1,5 @@
 Bookmark Manager
 
-<%= @array_of_bookmarks %>
+<% @array_of_bookmarks.each do |url| %>
+  <li><%= url %></li>
+<% end %>
