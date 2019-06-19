@@ -20,3 +20,12 @@ User stories:
 1) As a user,
 so that I can access websites I marked
 I would like to see a list of bookmarks
+
+Database setup:
+
+```
+$> psql
+admin=# CREATE DATABASE bookmark-manager;
+admin=# CREATE TABLE bookmarks(id SERIAL PRIMARY KEY, url, VARCHAR(60));
+admin=# INSERT INTO bookmarks (url) VALUES ('http://www.makersacademy.com'), ('http://www.google.com'), ('http://destroyallsoftware.com');
+```
